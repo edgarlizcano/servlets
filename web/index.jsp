@@ -15,7 +15,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <form action="login" method="POST">
+        <form action="LoginServlet" method="POST">
             <input type="text" name="user" id=""> <br>
             <input type="password" name="pass" id=""> <br>
             <input type="submit" name="entrar" value="Entrar" id="">
