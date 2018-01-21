@@ -15,6 +15,7 @@ import java.sql.Statement;
  */
 public class Consultas extends Conexion{
     public static boolean auth(String user, String pass) throws SQLException{
+        Conexion.conectar();
         String Query = "SELECT * FROM usuarios";
             Statement st = conexion.createStatement();
             ResultSet resultSet;
