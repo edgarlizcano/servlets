@@ -45,10 +45,9 @@ public class LoginServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             if(Consultas.auth(user, pass)){
-                out.println("<h1>Bienvenido "+user+"</h1>");
-                out.println("<h1>Autenticado exitosamente</h1>");
+                response.sendRedirect("home.jsp");
             }else{
-                out.println("<h1>Error de Autenticación</h1>");
+                response.sendRedirect("index.jsp");
             }
             out.println("</body>");
             out.println("</html>");
